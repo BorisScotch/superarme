@@ -1,0 +1,86 @@
+body {
+	font-family:'Open Sans', sans-serif;
+}
+.img-center {
+  margin: 0 auto;
+  display: block;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+nav li a {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+/* COMPLETAR */ 
+	/* SELECTION COLOR */     
+	::-moz-selection { /* Firefox */
+	    color: #fff;
+	    background: rgb(56, 76, 95);;
+	}
+
+	::selection {
+	    color: #fff;
+	    background: rgb(56, 76, 95);;
+	}
+
+/* NAVBAR */ 
+	/* TOP */
+	.navbar-fixed-top {
+		border-width: 0px;
+	}
+	.top-navbar {
+		font-size: 12px;
+		background: rgba(100,100,100,0.5);
+		max-height: 40px;
+		height: 40px;
+		line-height: 13px;
+	}
+	.top-navbar.top-navbar-opacity,
+	.top-navbar.top-navbar-opacity ul li.novedades a,
+	.top-navbar.top-navbar-opacity ul li.facebook a,
+	.top-navbar.top-navbar-opacity ul li.colabora a {
+		background: rgba(100,100,100,1);
+		color: #fff;
+
+	}
+	.top-navbar ul li.novedades a {
+		border: 1.5px solid rgba(0,0,0,0);
+  		border-radius: 25px;
+  		padding: 5px 10px;
+  		margin: 3px 0px;
+	}
+	.top-navbar ul li.facebook a {
+		border: 1.5px solid rgba(0,0,0,0);
+  		border-radius: 25px;
+  		padding: 5px 10px;
+  		margin: 3px 0px;
+  		font-size: 20px;
+	}
+	.top-navbar ul li.colabora a {
+		border: 1.5px solid #fff;
+  		border-radius: 25px;
+  		padding: 5px 10px;
+  		margin: 3px 0px;
+	}
+	.top-navbar ul li.colabora a:hover {
+		border: 1.5px solid lightgreen;
+  		border-radius: 25px;
+  		padding: 5px 10px;
+  		margin: 3px 0px;
+  		background-color: lightgreen; 
+  		color:#fff;
+  		font-weight: 900;
+	}
+
+	/* BOTTOM */
+	.bottom-navbar {
+		background-color: rgba(146, 146, 146, 0.475);
+	}
+	.bottom-navbar.bottom-navbar-opacity {
+		background-color: rgba(146, 146, 146, 0.306);
+	}

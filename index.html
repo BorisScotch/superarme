@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>SUPERARME</title>
+
+	<!-- META TAGS  -->
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="theme-color" content="#384c5f">
+	<meta name="msapplication-TileColor" content="#384c5f">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="msapplication-navbutton-color" content="#384c5f">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#384c5f">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Soluciones para tu negocio o industria">
+	<meta name="keywords" content="Soluciones para tu negocio o industria,soluciones tecnologicas para tu negocio o industria,impresoras 3d,impresion 3d,service impresoras 3d,perfileria cnc, sliders, barras soportadoras,">
+
+	<!-- ZELDA TAGS -->
+
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/mediaquerys.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/aos.css">
+	<link rel="icon" type="image/svg+xml" href="imagenes/fav-icon-ingia.svg">
+	<link rel="icon" type="image/png" href="imagenes/fav-icon-ingia.png">
+
+	<!-- JABBA THE HUTT -->
+
+	<script type="text/javascript" src="JS/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="JS/angular.js"></script>
+	<script type="text/javascript" src="JS/angular-route.js"></script>
+	<script type="text/javascript" src="JS/angular-touch.min.js"></script>
+	<script src="JS/bootstrap.min.js"></script>
+	<script type="text/javascript" src="JS/aos.js"></script>
+	<script src="https://use.fontawesome.com/e379886307.js"></script>
+	<script type="text/javascript" src="JS/main.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function() {    
+    	var scroll = $(window).scrollTop();
+    	if (scroll >= 60) {
+	        $(".top-navbar").addClass("top-navbar-opacity");
+	        $(".bottom-navbar").addClass("bottom-navbar-opacity");
+	        //$(".whenontop-bg").attr('src','imagenes/logo-md-lg-white.png');
+	        //$(".whenontop-sm").attr('src','imagenes/logo-sm-xs-white.png');
+	        
+	    	} else {
+		    $(".top-navbar").removeClass("top-navbar-opacity");
+		    $(".bottom-navbar").removeClass("bottom-navbar-opacity");
+		    //$(".whenontop-bg").attr('src','imagenes/logo-md-lg.png');
+		    //$(".whenontop-sm").attr('src','imagenes/logo-sm-xs.png');
+		    
+	    	}
+		});	
+	</script>
+	<!--  -->
+
+<base href="/">
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-fixed-top navbar-default">
+		<!-- TOPNAVBAR -->
+		<div class="top-navbar hidden-xs">
+			<div class="container-fluid">
+				<a class="navbar-brand img-center visible-md visible-lg" href="/"  style="padding: 7.5px;">					
+					<img src="imagenes/LOGO-SUPERARME.PNG" width="75" height="75" class="img-center">						
+				</a>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="novedades">
+						<a href="/novedades">novedades</a>
+					</li>
+					<li class="novedades">
+						<a href="/contactanos">contactanos</a>
+					</li>
+					<li class="colabora">
+						<a href="/participa">participá</a>
+					</li>
+					<li class="facebook">
+						<a target="_blank" href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>	
+		</div>
+        
+		<div class="bottom-navbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+					<a class="navbar-brand img-center visible-xs visible-sm " href="#/"  style="padding: 7.5px;">
+
+						<img src="" class="img-responsive img-center whenontop-sm">
+
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="/">inicio</a>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="">quienes somos</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">misión y visión</a></li>
+								<li><a href="#">valores</a></li>
+								<li><a href="#">conocé al equipo</a></li>
+								<li><a href="#">nuestra historia</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="">nuestro trabajo</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">emprendedores del año</a></li>
+								<li><a href="#">testimonios</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/galeriadefotos">galeria de fotos</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	</nav>
+	<!-- END NAVBAR -->
+	<!-- CONTENT -->
+	
+	<div ng-view autoscroll>
+
+	</div>
+	<!-- END-CONTENT -->
+	<!-- FOOTER -->
+
+	<!-- END FOOTER -->
+
+</body>
+</html>
